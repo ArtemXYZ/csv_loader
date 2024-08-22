@@ -12,7 +12,7 @@ from methods.btns import *
 
 root = Tk()
 
-
+# https://github.com/ArtemXYZ/csv_loader.git
 
 
 
@@ -23,18 +23,38 @@ root.geometry('600x500')  # Указываем размеры окна
 
 # todo добавить иконку программе
 
-# root.resizable(width=False, height=False)   # Делаем невозможным менять размеры окна
+root.resizable(width=False, height=False)  # Делаем невозможным менять размеры окна
 
 
 # ------------------------------- Создаем фрейм (область для размещения других объектов)
 
+# # Указываем к какому окну он принадлежит, какой у него фон и какая обводка
+# frame_top = Frame(root, bg='#FFDAB9', bd=15)
+# frame_top.place(relx=0.05, rely=0.05, relwidth=0.9, relheight=0.3) # Также указываем его расположение
+
+
+# Заглавная лейба
+frame_top = Frame(root, bg='#FFDAB9', bd=15)
+frame_top.place(relx=0.05, rely=0.05, relwidth=0.9, relheight=0.1) # Также указываем его расположение
+
+
 # Указываем к какому окну он принадлежит, какой у него фон и какая обводка
 frame_top = Frame(root, bg='#FFDAB9', bd=15)
-frame_top.place(relx=0.05, rely=0.05, relwidth=0.9, relheight=0.3) # Также указываем его расположение
+frame_top.place(relx=0.05, rely=0.17, relwidth=0.35, relheight=0.15) # Также указываем его расположение
 
-# Текстовая надпись в окне параметров подключения:
-label_param_url_engine = Label(frame_top, text='Заполните параметры подключения к базе данных', font=40)
-label_param_url_engine.place()  # grid() place
+#
+# # Текстовая надпись в окне параметров подключения:
+# label_param_url_engine = Label(frame_top, text='Заполните параметры подключения к базе данных', font=40)
+# label_param_url_engine.pack()  # grid() place()
+
+# # Текстовая надпись: Введите
+# label_param_url_engine = Label(frame_top, text='Диалект базы данных', font=2)
+# label_param_url_engine.pack()  # grid() place()
+
+
+# Создаем текстовое поле для получения данных от пользователя
+write_db = Entry(frame_top, bg='#7CCD7C', font=10)
+write_db.pack() # Размещение этого объекта, всегда нужно прописывать
 
 
 # # Все то-же самое, но для второго фрейма
