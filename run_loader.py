@@ -207,7 +207,7 @@ save_db_button.pack(pady=20)
 convert_window = Toplevel(main_window)
 convert_window.withdraw()  # Скрываем это окно изначально
 convert_window['bg'] = '#96CDCD'
-convert_window.title("Преобразование Excel в CSV")
+convert_window.title("CSVLoader")
 convert_window.geometry('340x350')
 convert_window.resizable(width=False, height=False)  # Делаем невозможным менять размеры окна
 
