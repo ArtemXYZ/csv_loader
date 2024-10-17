@@ -1,5 +1,5 @@
 """
-Модуль-программа импорта csv файлов в базу данных (загрузчик csv).
+Модуль-программа импорта csv файлов в базу данных (загрузчик csv).p
 """
 
 # --------------------------------
@@ -101,10 +101,6 @@ destination_var = StringVar()
 convert_button = Button(main_window, text="Преобразовать", command=handle_convert, width=40)
 convert_button.grid(row=4, column=0, columnspan=2, padx=20, pady=25)
 
-# Кнопка для возврата в главное окно
-back_button = Button(main_window, text="Назад", command=lambda: back_to_main(main_window), width=40)
-back_button.grid(row=5, column=0, columnspan=2, padx=20, pady=5)
-# ---------------------------------------------------------
 
 
 
