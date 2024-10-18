@@ -82,7 +82,8 @@ frame.grid(row=0, column=0, columnspan=2, padx=20, pady=30, sticky="we")
 choose_file_button = Button(frame, text="Выбрать файл", command=lambda: file_name_var.set(select_file()))
 choose_file_button.grid(row=1, column=0, padx=10, pady=10, columnspan=2, sticky="w")
 
-choose_destination_button = Button(frame, text="Место назначения", command=lambda: destination_var.set(choose_destination()))
+choose_destination_button = Button(frame, text="Место назначения",
+                                   command=lambda: destination_var.set(choose_destination()))
 choose_destination_button.grid(row=2, column=0, padx=10, pady=10, columnspan=2, sticky="w")
 
 # Рамка для
